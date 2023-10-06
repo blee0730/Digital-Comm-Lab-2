@@ -6,7 +6,7 @@ This is the entire flowchart that will be broken down into pieces and explained.
 
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/8cc2eb71-0c61-4b89-8605-d56bd6bcd533)
 
-The start of the flowchart is again similar to the first lab where multiple modules combine into one SDR module where the audio file gets replaced with real time radio frequencies. The filtering gets done by the SDR module as well so the previous filter is no longer needed and is instead integrated into the SDR block. There is also a time sink which shows the frequency signal in the time domain as the SDR picks up the signals.
+The start of the flowchart is again similar to the first lab where multiple modules combine into one SDR module where the audio file gets replaced with real time radio frequencies. The filtering gets done by the SDR module as well so the previous filter is no longer needed and is instead integrated into the SDR block. There is also a frequency sink which shows the radio signals in the frequency domain as the SDR picks up the signals.
 ### Demodulator
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/aefb3ce1-c10d-49d1-8068-97e19fb9a71a)
 
