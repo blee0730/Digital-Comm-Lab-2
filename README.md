@@ -16,5 +16,6 @@ The FM Demod block is the frequency demodulator that converts the complex FM sig
 
 The rational resampler changes the sampling rate of the system to match the sampling rate of the computer. The resampling can only happen with an integer which is why the resampler must be interpolated and decimated by the sampling rate of the system and the sampling rate of the computer. This was also explained for the previous lab.
 ### Output
+![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/87ecf4c2-16a3-4cb3-ab55-763549509ea4)
 
-On the output there is a waterfall representation of the frequency spectrum as well as the fft of the audio. There are sliders on top to control the overall volume and gain of the system as well as a slider to change what frequency is being demodulated. Using this flowchart with the SDR and a list of FM radio stations in Colorado, it is easy to tune in to any FM radio station on the frequency spectrum.
+On the output there is a waterfall representation of the frequency spectrum on top as well as the fft of the original and demodulated audio signal. There are sliders on top to control the overall volume and gain of the system as well as a slider to change what frequency is being demodulated. Using this flowchart with the SDR and a list of FM radio stations in Colorado, it is easy to tune in to any FM radio station on the frequency spectrum.
