@@ -1,8 +1,9 @@
 # Digital-Comm-Lab-2
+## Introduction
 This lab was similar to the previous one in that GNURadio was used with an SDR except instead of scanning AM frequencies the audio file provided scanned FM frequencies. A flowchart was created in GNURadio to use the provided audio file to scan different frequencies on the frequency spectrum. Afterwards the SDR was connected to scan different radio frequencies in real time. The flowchart created is shown below.
 ## Flowchart
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/e246764e-a6f0-4979-b66a-15bef7bf93e1)
-This is the entire flowchart that will be broken down into pieces and explained.
+This is the entire flowchart used in this lab that will be broken down into pieces and explained.
 
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/8cc2eb71-0c61-4b89-8605-d56bd6bcd533)
 
