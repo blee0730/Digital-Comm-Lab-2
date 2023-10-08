@@ -11,7 +11,7 @@ The start of the flowchart is again similar to the first lab where multiple modu
 ### Demodulator
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/aefb3ce1-c10d-49d1-8068-97e19fb9a71a)
 
-The FM Demod block is the frequency demodulator that converts the complex FM signal into a float with a channel rate of 400kHz which is the sampling frequency of the demodulator. This makes it so the complex frequency signal can be read by the computer. The decimation rate is at 1 so that none of the signal is lost in the process of demodulation. The audio pass and stop is the low pass filter that starts the cuttoff at 15kHz and ends at 16kHz giving it a transition width of 1kHz.
+The FM Demod block is the frequency demodulator that converts the complex FM signal into a float with a channel rate of 400kHz which is the sampling frequency of the demodulator. This makes it so the complex frequency signal can be read by the computer. The decimation rate is at 1 so that none of the signal is lost in the process of demodulation. The audio pass and stop is the low pass filter that starts the cuttoff at 15kHz and ends at 16kHz giving it a transition width of 1kHz because it is difficult to create a brick wall low pass filter.
 ### Resampler
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/9fbe3b38-6425-49e0-93bc-baa813d24585)
 
