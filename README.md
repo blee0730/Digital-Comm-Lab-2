@@ -12,6 +12,11 @@ The start of the flowchart is again similar to the first lab where multiple modu
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/aefb3ce1-c10d-49d1-8068-97e19fb9a71a)
 
 The FM Demod block is the frequency demodulator that converts the complex FM signal into a float with a channel rate of 400kHz which is the sampling frequency of the demodulator. This makes it so the complex frequency signal can be read by the computer. The decimation rate is at 1 so that none of the signal is lost in the process of demodulation. The audio pass and stop is the low pass filter that starts the cuttoff at 15kHz and ends at 16kHz giving it a transition width of 1kHz because it is difficult to create a brick wall low pass filter.
+
+#### Low Pass Filter
+![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/4309f710-7347-4b2e-8640-7d61d2014443)
+
+This is the low pass filter that is being implemented by the Demodulator as shown by GnuRadio's Filter Design Tool. The cutoff frequency is at 15kHz with the end at 16kHz for a 1kHz transition width using the Hamming Window.
 ### Resampler
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/9fbe3b38-6425-49e0-93bc-baa813d24585)
 
@@ -19,4 +24,4 @@ The rational resampler changes the sampling rate of the system to match the samp
 ### Output
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/87ecf4c2-16a3-4cb3-ab55-763549509ea4)
 
-On the output there is a waterfall representation of the frequency spectrum on top as well as the fft of the original and demodulated audio signal. There are sliders on top to control the overall volume and gain of the system as well as a slider to change what frequency is being demodulated. Using this flowchart with the SDR and a list of FM radio stations in Colorado, it is easy to tune in to any FM radio station on the frequency spectrum.
+On the output there is a waterfall representation of the radio station frequency in time on the very top as well as the fft of the original signal on the very bottom and demodulated audio signal in the middle. There are sliders on top to control the overall volume and gain of the system as well as a slider to change what frequency is being demodulated. Using this flowchart with the SDR and a list of FM radio stations in Colorado, it is easy to tune in to any FM radio station on the frequency spectrum.
