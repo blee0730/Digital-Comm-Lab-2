@@ -21,6 +21,12 @@ This is the low pass filter that is being implemented by the Demodulator as show
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/9fbe3b38-6425-49e0-93bc-baa813d24585)
 
 The rational resampler changes the sampling rate of the system to match the sampling rate of the computer. The resampling can only happen with an integer which is why the resampler must be interpolated and decimated by the sampling rate of the system and the sampling rate of the computer. This was also explained for the previous lab.
+
+#### Decimation
+![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/4d71f73c-a888-4de5-bc4e-13e7c3f8b823)
+
+This is an example of what happens if there is too much decimation. The signal above is the message signal that needs to be captured and the signal below is the signal after decimation. The decimation changes the signal so much that it is unrecognizable on the output. Something similar happens during interpolation that changes the signal as well. While information is not lost during interpolation, it still creates false information that is transmitted leading to a different output. This is why correctly decimating and interpolating the signal is so important and why, if done wrong, it can lead to a unrecognizable message on the output.
+
 ### Output
 ![image](https://github.com/blee0730/Digital-Comm-Lab-2/assets/130094173/87ecf4c2-16a3-4cb3-ab55-763549509ea4)
 
